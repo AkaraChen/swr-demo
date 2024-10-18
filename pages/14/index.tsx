@@ -11,7 +11,7 @@ const Inner = () => {
         return <p>preloaded, should not happen</p>;
     }
     return <p>{swr.data.join(' ')}</p>;
-}
+};
 
 preload('/', () => ok(['fetch', 'on', 'preload']));
 
